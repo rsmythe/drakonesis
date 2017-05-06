@@ -1,4 +1,4 @@
-package io.kate.pyrokinesis.views;
+package io.heavymeta.targaryen.views;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.SurfaceView;
 
-import io.kate.pyrokinesis.R;
+import io.heavymeta.targaryen.R;
 
 /**
  * Displays the ring of emitters and handles touch events to them
@@ -76,6 +76,7 @@ public class EmittersView extends SurfaceView {
 
     @Override
     public void draw(Canvas canvas) {
+        super.draw(canvas);
         // center the ring
         ringX = getWidth() / 2;
         ringY = getHeight() / 2;

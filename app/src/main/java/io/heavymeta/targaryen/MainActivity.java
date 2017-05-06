@@ -1,4 +1,4 @@
-package io.kate.pyrokinesis;
+package io.heavymeta.targaryen;
 
 import android.app.Activity;
 import android.app.AlarmManager;
@@ -32,7 +32,7 @@ import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
 
-import io.kate.pyrokinesis.views.EmittersView;
+import io.heavymeta.targaryen.views.EmittersView;
 
 public class MainActivity extends Activity {
     public static final String intent = "io.kate.coatrack.update";
@@ -106,10 +106,10 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-        ipString = prefs.getString(PyrokinesisApplication.PREF_SERVER_ADDRESS,
-                PyrokinesisApplication.DEFAULT_IP);
-        port = prefs.getInt(PyrokinesisApplication.PREF_SERVER_PORT,
-                PyrokinesisApplication.DEFAULT_PORT);
+        ipString = prefs.getString(TargaryenApplication.PREF_SERVER_ADDRESS,
+                TargaryenApplication.DEFAULT_IP);
+        port = prefs.getInt(TargaryenApplication.PREF_SERVER_PORT,
+                TargaryenApplication.DEFAULT_PORT);
 
         ringView = (EmittersView) findViewById(R.id.ring_view);
         ringView.postInvalidate();
@@ -132,9 +132,8 @@ public class MainActivity extends Activity {
         super.onResume();
 
         startTimeout();
-
         registerReceiver(receiver, new IntentFilter(intent));
-        wifiManager = (WifiManager) getSystemService(WIFI_SERVICE);
+        wifiManager = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
         createWifiAccessPoint();
 
         step = 0;
@@ -244,9 +243,9 @@ public class MainActivity extends Activity {
 
         WifiConfiguration netConfig = new WifiConfiguration();
         netConfig.SSID = context.getString(R.string.ssid);
-        netConfig.preSharedKey = context.getString(R.string.wireless_password);
-        netConfig.allowedProtocols.set(WifiConfiguration.Protocol.WPA);
-        netConfig.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.WPA_PSK);
+        //netConfig.preSharedKey = context.getString(R.string.wireless_password);
+        //netConfig.allowedProtocols.set(WifiConfiguration.Protocol.WPA);
+        //netConfig.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.WPA_PSK);
 
         return netConfig;
     }

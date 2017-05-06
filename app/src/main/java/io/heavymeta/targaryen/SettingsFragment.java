@@ -1,4 +1,4 @@
-package io.kate.pyrokinesis;
+package io.heavymeta.targaryen;
 
 import android.app.DialogFragment;
 import android.content.SharedPreferences;
@@ -27,8 +27,8 @@ public class SettingsFragment extends DialogFragment {
         final TextView viewAddress = (TextView) view.findViewById(R.id.server_address);
         final TextView viewPort = (TextView) view.findViewById(R.id.server_port);
 
-        viewAddress.setText(prefs.getString(PyrokinesisApplication.PREF_SERVER_ADDRESS, PyrokinesisApplication.DEFAULT_IP));
-        viewPort.setText("" + prefs.getInt(PyrokinesisApplication.PREF_SERVER_PORT, PyrokinesisApplication.DEFAULT_PORT));
+        viewAddress.setText(prefs.getString(TargaryenApplication.PREF_SERVER_ADDRESS, TargaryenApplication.DEFAULT_IP));
+        viewPort.setText("" + prefs.getInt(TargaryenApplication.PREF_SERVER_PORT, TargaryenApplication.DEFAULT_PORT));
 
         Button button = (Button) view.findViewById(R.id.connect_button);
 
@@ -42,8 +42,8 @@ public class SettingsFragment extends DialogFragment {
                 } catch (Exception e) {
                 }
 
-                editor.putString(PyrokinesisApplication.PREF_SERVER_ADDRESS, viewAddress.getText().toString());
-                editor.putInt(PyrokinesisApplication.PREF_SERVER_PORT, port);
+                editor.putString(TargaryenApplication.PREF_SERVER_ADDRESS, viewAddress.getText().toString());
+                editor.putInt(TargaryenApplication.PREF_SERVER_PORT, port);
 
                 editor.commit();
                 getDialog().dismiss();

@@ -1,4 +1,4 @@
-package io.kate.pyrokinesis;
+package io.heavymeta.targaryen;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
