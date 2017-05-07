@@ -5,7 +5,7 @@ android {
     buildToolsVersion '25.0.0'
 
     defaultConfig {
-        applicationId "io.heavymeta.targaryen"
+        applicationId "io.heavymeta.drakonesis"
         minSdkVersion 14
         targetSdkVersion 22
         versionCode 1
