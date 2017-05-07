@@ -4,23 +4,42 @@
     android:layout_height="fill_parent">
 
     <Button
-        android:id="@+id/button_eruption"
+        android:id="@+id/button_breath_fire"
         style="@style/EffectButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_eruption" />
+        android:text="@string/button_breath_fire"
+        android:onClick="TriggerBreatheFireSequence"/>
 
     <Button
-        android:id="@+id/button_pinwheel"
+        android:id="@+id/button_open_mouth"
         style="@style/EffectButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_pinwheel" />
+        android:text="@string/button_open_mouth"
+        android:onClick="TriggerOpenMouth"/>
 
     <Button
-        android:id="@+id/button_random"
+        android:id="@+id/button_close_mouth"
         style="@style/EffectButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_random" />
+        android:text="@string/button_close_mouth"
+        android:onClick="TriggerCloseMouth"/>
+
+    <Button
+        android:id="@+id/button_extend_wings"
+        style="@style/EffectButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_extend_wings"
+        android:onClick="TriggerExtendWings"/>
+
+    <Button
+        android:id="@+id/button_retract_wings"
+        style="@style/EffectButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_retract_wings"
+        android:onClick="TriggerRetractWings"/>
 </merge>

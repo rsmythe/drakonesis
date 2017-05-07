@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="arena_bg">#000</color>
+    <color name="arena_bg">#fff</color>
     <color name="emitter_outline">#aaa</color>
     <color name="emitter_active">#aaa</color>
 

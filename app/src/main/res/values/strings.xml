@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">Targaryen</string>
 
-    <string name="button_eruption">Eruption</string>
-    <string name="button_pinwheel">Pinwheel</string>
-    <string name="button_random">Random</string>
+    <string name="button_breath_fire">Breath Fire</string>
+    <string name="button_open_mouth">Open Mouth</string>
+    <string name="button_close_mouth">Close Mouth</string>
+    <string name="button_extend_wings">Extend Wings</string>
+    <string name="button_retract_wings">Retract Wings</string>
     <string name="button_save">Save</string>
 
     <string name="menu_settings">Settings</string>
