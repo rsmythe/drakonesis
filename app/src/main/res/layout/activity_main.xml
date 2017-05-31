@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@color/arena_bg"
-        android:src="@mipmap/meta_logo_white" />
+        android:src="@mipmap/meta_logo_white"/>
 
     <LinearLayout
         android:layout_width="0dip"
@@ -24,4 +24,5 @@
 
         <include layout="@layout/trigger_buttons" />
     </LinearLayout>
+
 </LinearLayout>

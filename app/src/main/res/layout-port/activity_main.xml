@@ -5,10 +5,14 @@
     android:background="@color/arena_bg"
     android:orientation="vertical">
 
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="match_parent"
-        android:layout_height="139dp"
+        android:layout_height="209dp"
         android:background="@color/arena_bg"
         android:src="@mipmap/meta_logo_white" />
 

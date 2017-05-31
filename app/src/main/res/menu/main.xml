@@ -2,6 +2,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/menu_settings"
-        app:showAsAction="always"
-        android:title="@string/menu_settings" />
+        android:checkable="false"
+        android:title="@string/menu_settings"
+        android:visible="true"
+        app:showAsAction="always" />
 </menu>
