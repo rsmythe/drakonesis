@@ -45,7 +45,7 @@ public class DragonConnect {
     }
 
     public void SendAction(DragonAction id) {
-        (new ConnectTask()).execute(new byte[]{(byte) (id.getValue() + hack)});
+        (new ConnectTask()).execute(new byte[]{(byte) (id.getValue())});
     }
 
     public void onPause()

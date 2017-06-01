@@ -5,11 +5,11 @@ package io.heavymeta.drakonesis.DragonCommand;
  */
 
 public enum DragonAction {
-    OpenMouth((byte)0, 3000),
-    CloseMouth((byte)1, 3000),
-    BreatheFire((byte)2, 1000),
-    ExtendWings((byte)3, 5000),
-    RetractWings((byte)4, 5000);
+    OpenMouth((byte)0x02, 3000),
+    CloseMouth((byte)0x03, 3000),
+    BreatheFire((byte)0x04, 1000),
+    ExtendWings((byte)0x05, 5000),
+    RetractWings((byte)0x06, 5000);
 
     private final byte _id;
     private final int _duration;
